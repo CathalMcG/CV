@@ -1,0 +1,243 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont[Mapping=tex-text]{Hoefler Text} % Main document font
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+\rfoot{\color{headings} {\fontfamily{qcs}\selectfont \today}}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\fontfamily{qcs}\selectfont\Huge Cathal McGovern}\\ % Your name
+{Curriculum {Vitae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
+	
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience} 
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+{\raggedleft\textsc{Aug 2014 - Present}\par}
+
+{\raggedright\large SAP Business Objects Software Ltd.\\
+\textit{Developer}\\[5pt]}
+
+\normalsize{
+\begin{itemize}
+\item{Worked with a team on the design, implementation, and testing of product software.}
+\item{Developed theoretical and practical knowledge of a variety of machine learning techniques and technologies.}
+\item{Contributed to all components of the software stack including application layer, database, and UI.}
+\item{Maintained unit and integration tests for all components of the product.}
+\item{Maintained translation system integration infrastructure, continuous integration systems, and automated testing tools.}
+\item{Participated in an agile scrum team maintaining a product backlog and working in sprints.}
+\item{Onboarded and mentored junior colleagues.}
+\item{Presented projects at internal conferences.}
+\item{Technologies used include JavaScript, SAPUI5, HANA SQLScript, ABAP, Coffeescript, git, Jenkins, OData web services, node.js, QUnit, Fitnesse.}
+\end{itemize}
+}
+%----------------------------------------------------------------------------------------	
+
+%----------------------------------------------------------------------------------------
+%   Projects
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+\begin{tabular}{rl}
+\textsc{Present} & \textbf{SAP Predictive Analytics integrator} \\
+& A generic and flexible framework for the \\
+& management and operationalization predictive \\
+& models in business applications. \\ \\
+
+\textsc{Present} & \textbf{Cellular Automata} \\
+& A suite of cellular automata written in \\
+& object-oriented Python. \\
+& \href{https://github.com/CathalMcG/Cells}{https://github.com/CathalMcG/Cells} \\ \\
+
+2014 & \textbf{Noise Reduction for Holographic Video} \\
+& An investigation into the use of sinusoidal \\
+& masking to reduce speckle noise in digital \\
+& holographic video. \\ \\
+
+2014 & \textbf{Spam Classifier} \\
+& A machine-learning spam filter using \\
+& a word-bag approach. Written in Python \\
+& using scikit-learn. \\
+\end{tabular}
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & 5 Gray Square, The Coombe, Dublin 8 \\ % Address
+\raisebox{-3pt}{\Mobilefone} & +353 (0)86 1202987 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:cathal.mcgovern@gmail.com}{cathal.mcgovern@gmail.com} \\ % Email address
+\Keyboard & \href{www.linkedin.com/in/cathalmcgovern}{www.linkedin.com/in/cathalmcgovern} \\ % Website
+\end{tabular}
+}
+}\\
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+
+2010 -- \textsc{2014} & \textbf{Bachelor of Science} \\  
+& \small First Class Honours \\
+& \textit{\href{https://www.maynoothuniversity.ie/}{Maynooth University}} \\
+& Final Year Project - Noise Reduction \\
+& for Digital Holographic Video \\
+&\\
+
+2004 -- \textsc{2010} & \textbf{Leaving Certificate} \\  
+& \small 8 subjects at higher level - 510 points \\
+& \textit{\href{http://www.cbskilkenny.ie/}{C.B.S. Secondary School, Kilkenny}} \\
+%----------------------------------------------------------------------------------------
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+% SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills} 
+
+\begin{tabular}{rl}
+Proficient With
+& JavaScript, Object Orientation, \\
+& Machine Learning, git, ABAP, SQL, \\
+& Automated Testing, Linux \\
+& \\
+Familiar With
+& Python, Java, MATLAB, Scheme, \\
+& Distributed Systems, Networks, \\
+& Computer Vision, PHP, \\
+& Applied Mathematics \\ 
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%   Achievements
+%----------------------------------------------------------------------------------------
+
+\section{Achievements} 
+
+\begin{tabular}{rl}
+
+2016 & \textbf{Consumption of Predictive Models} \\
+& Co-wrote and filed a patent describing an \\
+& approach for lifecycle management and \\
+& consumption of predictive models. \\ \\
+
+2016 & \textbf{Living at the Nuclear Brink} \\
+& Completed this course about nuclear weapons \\
+& offered online by Stanford University. \\ \\
+
+2013 & \textbf{Minds Society President} \\
+& Elected President of the Maynooth \\
+& University computing society. \\ \\
+
+2013 & \textbf{Cryptography I} \\
+& Completed this course offered online \\
+& by Stanford University. \\ \\
+
+2013 & \textbf{Irish Collegiate Programming Contest} \\
+& Participated as part of a team of three \\
+& in this timed programming competition. \\ \\
+
+2012 & \textbf{Games Without Chance - Distinction} \\
+& Completed this course in combinatorial \\
+& game theory offered online by \\
+& Georgia Institute of Technology. \\
+\end{tabular}\\
+	
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
